@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaenal's Bookshelf</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Zaenal's Bookshelf App</h1>
+    </header>
+
+    <main>
+      <section class="top">
+        <div class="form-box">
+          <h2 class="judul">Tambahkan Buku Baru</h2>
+          <form action="" id="formulirBuku" method="post">
+            <div class="form-group">
+              <input type="text" name="judul" id="judul" placeholder="">
+              <label for="judul_buku">Judul</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="penulis" id="penulis" placeholder="">
+              <label for="penulis">Penulis</label>
+            </div>
+
+            <div class="form-group">
+              <input type="number" name="tahun" id="tahun" placeholder="">
+              <label for="tahun">Tahun</label>
+            </div>
+
+            <div class="check-group">
+              <input type="checkbox" name="telahDibaca" id="telahDibaca" placeholder="">
+              <label for="telahDibaca">Selesai dibaca</label>
+            </div>
+            <button type="submit" class="submit-btn">Simpan</button>
+          </form>
+        </div>
+
+        <div class="search-box">
+          <h2 class="judul">Cari Buku</h2>
+          <form action="" id="formulirSearch" method="post">
+            <div class="form-group">
+              <input type="text" name="pencarian_buku" id="pencarian_buku" placeholder="">
+              <label for="pencarian_buku">Cari Buku</label>
+            </div>
+
+            <div class="form-search-group">
+              <button type="reset" class="reset-btn">Refresh</button>
+              <button type="submit" class="search-btn">Temukan</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="bottom">
+        <div class="left-box">
+          <h2 class="judul">Buku Belum Dibaca</h2>
+          <div id="belumDibaca"></div>
+        </div>
+        <div class="right-box">
+          <h2 class="judul">Buku Selesai Dibaca</h2>
+          <div id="sudahDibaca"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Zaenal Alfian</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
